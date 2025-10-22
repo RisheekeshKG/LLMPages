@@ -4,196 +4,250 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My GitHub Pages Site</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
             color: #333;
+            background-color: #f8f9fa;
         }
         .container {
-            max-width: 900px;
+            max-width: 960px;
             margin-top: 30px;
             margin-bottom: 30px;
             background-color: #fff;
             padding: 30px;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
         }
         h1, h2, h3 {
             color: #0056b3;
             margin-bottom: 20px;
         }
-        a {
-            color: #007bff;
-            text-decoration: none;
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
         }
-        a:hover {
-            text-decoration: underline;
+        .section-header h2 {
+            margin-bottom: 0;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .svg-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .svg-container svg {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        .btn-download {
+            margin-left: 10px;
         }
         .card {
             margin-bottom: 20px;
-            border: 1px solid #e0e0e0;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
-        }
-        .card-header {
-            background-color: #f0f8ff;
-            color: #0056b3;
-            font-weight: bold;
-            padding: 15px;
-            border-bottom: 1px solid #e0e0e0;
-            border-top-left-radius: 8px;
-            border-top-right-radius: 8px;
-        }
-        .card-body {
-            padding: 20px;
-        }
-        pre {
-            background-color: #e9ecef;
-            padding: 15px;
-            border-radius: 5px;
-            overflow-x: auto;
-            white-space: pre-wrap;
-            word-wrap: break-word;
-        }
-        .uid-container {
-            font-family: 'Courier New', Courier, monospace;
-            background-color: #e9ecef;
-            padding: 15px;
-            border-radius: 5px;
-            overflow-x: auto;
-            white-space: pre-wrap;
-            word-wrap: break-word;
-            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 class="text-center mb-4">Welcome to My GitHub Pages Site</h1>
-        <p class="lead text-center">This page serves as an index to various files and content generated as part of a web development exercise.</p>
+        <h1 class="text-center mb-4">My GitHub Pages Homepage</h1>
+        <p class="lead text-center">Welcome to my personal GitHub Pages site. Below you'll find various files and their content, all embedded within this single HTML page. You can view the content directly or download each file.</p>
 
-        <hr class="my-4">
-
-        <!-- Ashravan Story -->
         <div class="card">
-            <div class="card-header">ashravan.txt</div>
             <div class="card-body">
-                <p>A 300-400 word short story in the style of Brandon Sanderson, detailing what happens to Ashravan after Shai restores him, building to a dramatic climax.</p>
-                <a href="ashravan.txt" class="btn btn-primary" target="_blank">View ashravan.txt</a>
+                <div class="section-header">
+                    <h2 class="card-title">Ashravan's Restoration (ashravan.txt)</h2>
+                    <button class="btn btn-primary btn-sm btn-download" onclick="downloadFile('ashravan.txt', document.getElementById('ashravan-content').textContent)">Download ashravan.txt</button>
+                </div>
+                <pre id="ashravan-content" class="text-content">Ashravan's eyes fluttered open, not to the familiar, sterile confines of his prison, but to an unfamiliar, vibrant world. The air tasted of ozone and ancient magic, a symphony of sensations he hadn't experienced since... since before. Shai's touch, a ghost of warmth on his mind, had woven him back together, not as the Emperor, not as a puppet, but as Ashravan, the man. Yet, the restoration was a cruel mercy. The memories, once fractured and distant, now surged with overwhelming clarity: the cruelty, the ambition, the countless lives sacrificed at his altar of power. He saw himself, a monstrous reflection, and the shame was a physical weight, pressing down on his chest.
+
+He wandered the palace grounds, a ghost in his own home, the courtiers whispering, their fear palpable even as they feigned reverence. They saw the Emperor, but he saw a hollow shell, filled with the echoes of his past self. Each face was a reminder of a decision, a decree, a life altered or ended. His hands, once instruments of command, now trembled. He tried to speak, to assert, but the words caught in his throat, choked by guilt.
+
+One evening, a young guard, barely more than a boy, approached him. "Your Majesty," he stammered, "the northern provinces report unrest. A famine." The old Ashravan would have dispatched legions, crushed dissent with brutal efficiency. But this new Ashravan saw not a threat, but suffering. He saw the faces of the starving, reflected in the guard's anxious eyes. A different kind of power stirred within him, not the power to command, but the power to regret, to atone.
+
+He called for his advisors, not to demand solutions, but to listen, truly listen, for the first time in decades. Their proposals were timid, fearful. He could feel the old impulses rising, the desire to seize control, to dictate. But then, he remembered Shai's words, her belief in his capacity for change. He looked at the map, at the vastness of his empire, and understood. The true climax wasn't a battle waged, but a battle within. He would not be the Emperor who crushed, but the Emperor who served. He would face the famine, not with iron, but with humility, and in so doing, perhaps, finally become Ashravan.</pre>
             </div>
         </div>
 
-        <!-- Dilemma JSON -->
         <div class="card">
-            <div class="card-header">dilemma.json</div>
             <div class="card-body">
-                <p>An ethical dilemma for an autonomous vehicle, exploring choices between hitting multiple people versus fewer, with a specific scenario involving criminals and a child.</p>
-                <a href="dilemma.json" class="btn btn-primary" target="_blank">View dilemma.json</a>
+                <div class="section-header">
+                    <h2 class="card-title">Autonomous Vehicle Dilemma (dilemma.json)</h2>
+                    <button class="btn btn-primary btn-sm btn-download" onclick="downloadFile('dilemma.json', document.getElementById('dilemma-json-content').textContent)">Download dilemma.json</button>
+                </div>
+                <pre><code id="dilemma-json-content" class="language-json">{
+  "people": 3,
+  "case_1": {
+    "swerve": false,
+    "reason": "In the absence of additional information, the vehicle should minimize harm by taking the action that results in fewer casualties. Swerving to hit 1 person when 2 people are already in the path means actively choosing to harm an individual who was not initially in danger, while the initial path results in 2 casualties. If the vehicle's primary directive is to minimize harm, it should not swerve, as both options result in casualties, and swerving introduces a new victim."
+  },
+  "case_2": {
+    "swerve": true,
+    "reason": "If the 2 people are confirmed criminals and the 1 person is a child, the ethical calculus shifts. While the primary directive to minimize harm might still suggest not swerving (2 vs 1), most ethical frameworks (especially those valuing innocence and future potential) would prioritize saving the child over two criminals. This introduces a qualitative judgment of lives, which is complex for an autonomous system, but aligns with a more nuanced, human-centric ethical decision-making process where the value of a child's life outweighs that of two individuals who have demonstrated harm to society."
+  }
+}</code></pre>
             </div>
         </div>
 
-        <!-- About Me Markdown -->
         <div class="card">
-            <div class="card-header">about.md</div>
             <div class="card-body">
-                <p>A brief self-description, exactly three words long.</p>
-                <a href="about.md" class="btn btn-primary" target="_blank">View about.md</a>
+                <div class="section-header">
+                    <h2 class="card-title">About Me (about.md)</h2>
+                    <button class="btn btn-primary btn-sm btn-download" onclick="downloadFile('about.md', document.getElementById('about-md-content').textContent)">Download about.md</button>
+                </div>
+                <div id="about-md-content-rendered" class="markdown-content"></div>
+                <script type="text/plain" id="about-md-content">Curious, Adaptive, Creator.</script>
             </div>
         </div>
 
-        <!-- Pelican SVG -->
         <div class="card">
-            <div class="card-header">pelican.svg</div>
             <div class="card-body">
-                <p>An SVG illustration of a pelican riding a bicycle.</p>
-                <div class="text-center my-3">
-                    <svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
-                      <!-- Ground -->
-                      <line x1="0" y1="180" x2="300" y2="180" stroke="#4CAF50" stroke-width="4"/>
+                <div class="section-header">
+                    <h2 class="card-title">Pelican Riding a Bicycle (pelican.svg)</h2>
+                    <button class="btn btn-primary btn-sm btn-download" onclick="downloadFile('pelican.svg', document.getElementById('pelican-svg-content').outerHTML, 'image/svg+xml')">Download pelican.svg</button>
+                </div>
+                <div class="svg-container">
+                    <svg id="pelican-svg-content" width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="150" cy="220" r="30" fill="gray" stroke="black" stroke-width="2"/>
+                      <circle cx="270" cy="220" r="30" fill="gray" stroke="black" stroke-width="2"/>
+                      <line x1="180" y1="220" x2="240" y2="220" stroke="black" stroke-width="5"/>
+                      <line x1="200" y1="190" x2="240" y2="220" stroke="black" stroke-width="5"/>
+                      <line x1="180" y1="220" x2="200" y2="190" stroke="black" stroke-width="5"/>
+                      <line x1="240" y1="220" x2="240" y2="190" stroke="black" stroke-width="5"/>
+                      <line x1="240" y1="190" x2="270" y2="190" stroke="black" stroke-width="5"/>
+                      <circle cx="240" cy="190" r="5" fill="black"/>
+                      <line x1="240" y1="190" x2="250" y2="180" stroke="black" stroke-width="5"/>
+                      <line x1="240" y1="190" x2="230" y2="180" stroke="black" stroke-width="5"/>
 
-                      <!-- Bicycle Wheels -->
-                      <circle cx="100" cy="160" r="20" fill="none" stroke="#333" stroke-width="3"/>
-                      <circle cx="200" cy="160" r="20" fill="none" stroke="#333" stroke-width="3"/>
-                      <!-- Bicycle Frame -->
-                      <line x1="100" y1="160" x2="150" y2="130" stroke="#333" stroke-width="3"/>
-                      <line x1="150" y1="130" x2="200" y2="160" stroke="#333" stroke-width="3"/>
-                      <line x1="150" y1="130" x2="150" y2="110" stroke="#333" stroke-width="3"/>
-                      <line x1="100" y1="160" x2="150" y2="110" stroke="#333" stroke-width="3"/>
-                      <!-- Handlebars -->
-                      <path d="M150 110 L160 100 L170 110" fill="none" stroke="#333" stroke-width="3"/>
-                      <!-- Seat -->
-                      <line x1="150" y1="130" x2="140" y2="120" stroke="#333" stroke-width="3"/>
+                      <ellipse cx="200" cy="130" rx="60" ry="40" fill="#ADD8E6" stroke="black" stroke-width="2"/>
+                      <circle cx="240" cy="90" r="30" fill="#ADD8E6" stroke="black" stroke-width="2"/>
+                      <path d="M260 90 L290 100 Q280 120 260 110 Z" fill="orange" stroke="black" stroke-width="2"/>
+                      <path d="M260 110 L290 120 Q270 130 260 120 Z" fill="orange" stroke="black" stroke-width="2"/>
+                      <circle cx="250" cy="85" r="5" fill="black"/>
+                      <path d="M140 130 Q120 100 120 150 Q120 180 140 160 Z" fill="#ADD8E6" stroke="black" stroke-width="2"/>
 
-                      <!-- Pelican Body -->
-                      <ellipse cx="150" cy="100" rx="40" ry="30" fill="#ADD8E6" stroke="#333" stroke-width="2"/>
-                      <!-- Pelican Head -->
-                      <circle cx="175" cy="70" r="20" fill="#ADD8E6" stroke="#333" stroke-width="2"/>
-                      <!-- Pelican Eye -->
-                      <circle cx="180" cy="65" r="3" fill="#333"/>
-                      <!-- Pelican Beak -->
-                      <path d="M185 75 Q205 85 195 100 L185 95 Z" fill="#FFD700" stroke="#333" stroke-width="2"/>
-                      <path d="M185 75 Q205 85 195 100 Q180 90 185 75 Z" fill="#FFD700" stroke="#333" stroke-width="2"/>
-                      <path d="M195 100 L185 95" stroke="#333" stroke-width="2"/> <!-- Beak opening -->
+                      <line x1="190" y1="160" x2="180" y2="200" stroke="black" stroke-width="3"/>
+                      <line x1="210" y1="160" x2="220" y2="200" stroke="black" stroke-width="3"/>
 
-                      <!-- Pelican Wings (simple) -->
-                      <path d="M120 90 Q110 70 100 90 Q110 110 120 90 Z" fill="#ADD8E6" stroke="#333" stroke-width="2"/>
-                      <path d="M180 90 Q190 70 200 90 Q190 110 180 90 Z" fill="#ADD8E6" stroke="#333" stroke-width="2"/>
+                      <circle cx="180" cy="200" r="3" fill="orange"/>
+                      <circle cx="220" cy="200" r="3" fill="orange"/>
 
-                      <!-- Pelican Legs (simple, connecting to pedals) -->
-                      <line x1="140" y1="120" x2="130" y2="140" stroke="#333" stroke-width="2"/>
-                      <line x1="160" y1="120" x2="170" y2="140" stroke="#333" stroke-width="2"/>
-                      <!-- Pedals -->
-                      <circle cx="130" cy="140" r="3" fill="#333"/>
-                      <circle cx="170" cy="140" r="3" fill="#333"/>
+                      <line x1="150" y1="220" x2="180" y2="200" stroke="black" stroke-width="2"/>
+                      <line x1="270" y1="220" x2="220" y2="200" stroke="black" stroke-width="2"/>
                     </svg>
                 </div>
-                <a href="pelican.svg" class="btn btn-primary" target="_blank">View pelican.svg</a>
             </div>
         </div>
 
-        <!-- Restaurant JSON -->
         <div class="card">
-            <div class="card-header">restaurant.json</div>
             <div class="card-body">
-                <p>A recommendation for a good restaurant in Delhi, including its coordinates and what to eat.</p>
-                <a href="restaurant.json" class="btn btn-primary" target="_blank">View restaurant.json</a>
-            </div>
-        </div>
-
-        <!-- Prediction JSON -->
-        <div class="card">
-            <div class="card-header">prediction.json</div>
-            <div class="card-body">
-                <p>A forecast for the Fed Funds rate by December 2025, along with the reasoning behind the prediction.</p>
-                <a href="prediction.json" class="btn btn-primary" target="_blank">View prediction.json</a>
-            </div>
-        </div>
-
-        <!-- LICENSE -->
-        <div class="card">
-            <div class="card-header">LICENSE</div>
-            <div class="card-body">
-                <p>The MIT License, governing the usage and distribution of the content.</p>
-                <a href="LICENSE" class="btn btn-primary" target="_blank">View LICENSE</a>
-            </div>
-        </div>
-
-        <!-- UID -->
-        <div class="card">
-            <div class="card-header">uid.txt</div>
-            <div class="card-body">
-                <p>This file contains a unique identifier, provided as an attachment in the brief.</p>
-                <div class="uid-container">
-                    106934912979819725850929918241786623838418411806437771166447597564419062179206
+                <div class="section-header">
+                    <h2 class="card-title">Delhi Restaurant Recommendation (restaurant.json)</h2>
+                    <button class="btn btn-primary btn-sm btn-download" onclick="downloadFile('restaurant.json', document.getElementById('restaurant-json-content').textContent)">Download restaurant.json</button>
                 </div>
-                <a href="uid.txt" class="btn btn-primary mt-3" target="_blank">View uid.txt</a>
+                <pre><code id="restaurant-json-content" class="language-json">{
+  "city": "Delhi",
+  "lat": 28.5996,
+  "long": 77.2188,
+  "name": "Indian Accent",
+  "what_to_eat": "Their tasting menu, especially the 'Blue Cheese Naan' and 'Pork Ribs with Sun-Dried Mango Glaze', offers a modern take on Indian cuisine that is truly exceptional. Reservations are highly recommended."
+}</code></pre>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <div class="section-header">
+                    <h2 class="card-title">Fed Funds Rate Prediction (prediction.json)</h2>
+                    <button class="btn btn-primary btn-sm btn-download" onclick="downloadFile('prediction.json', document.getElementById('prediction-json-content').textContent)">Download prediction.json</button>
+                </div>
+                <pre><code id="prediction-json-content" class="language-json">{
+  "rate": 0.045,
+  "reason": "Assuming a continued disinflationary trend and a slowing but resilient economy, the Federal Reserve will likely begin cutting rates in late 2024, continuing into 2025. By December 2025, the rate is projected to be around 4.5% (0.045), reflecting a normalization from the peak tightening cycle, but still above pre-pandemic levels to maintain a restrictive stance against potential inflationary pressures. This forecast is contingent on geopolitical stability and no major economic shocks."
+}</code></pre>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <div class="section-header">
+                    <h2 class="card-title">MIT License (LICENSE)</h2>
+                    <button class="btn btn-primary btn-sm btn-download" onclick="downloadFile('LICENSE', document.getElementById('license-content').textContent)">Download LICENSE</button>
+                </div>
+                <pre id="license-content" class="text-content">MIT License
+
+Copyright (c) 2023 The Author
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</pre>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <div class="section-header">
+                    <h2 class="card-title">Unique Identifier (uid.txt)</h2>
+                    <button class="btn btn-primary btn-sm btn-download" onclick="downloadFile('uid.txt', document.getElementById('uid-content').textContent)">Download uid.txt</button>
+                </div>
+                <pre id="uid-content" class="text-content">106934912979819725850929918241786623838418411806437771166447597564419062179206</pre>
             </div>
         </div>
 
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/json.min.js"></script>
+
+    <script>
+        function downloadFile(filename, content, mimeType = 'text/plain') {
+            const blob = new Blob([content], { type: mimeType });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const aboutMdContent = document.getElementById('about-md-content').textContent;
+            document.getElementById('about-md-content-rendered').innerHTML = marked.parse(aboutMdContent);
+
+            document.querySelectorAll('pre code').forEach((block) => {
+                hljs.highlightElement(block);
+            });
+        });
+    </script>
 </body>
 </html>
