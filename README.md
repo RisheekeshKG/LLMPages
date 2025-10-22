@@ -1,3 +1,2 @@
-# LLMPages
-
-Generated application for LLMPages
+bash
+    git clone https://github.com/RisheekeshKG/LLMPages.git
